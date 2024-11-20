@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="txt1">
+        <p>
+            <input type="button" id="lock" value="lock">
+            <input type="button" id="unlock" value="unlock">
+        </p>
+    </form>
+    <script>
+        document.getElementById("lock").onclick=function(){
+         document.getElementById("txt1").disabled=true;
+        }
+        document.getElementById("unlock").onclick=function(){
+         document.getElementById("txt1").disabled=false;
+        }
+    </script>
+</body>
+</html>

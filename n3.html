@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <form action="">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+    </form>
+    <script>
+       document.body.onmouseover=function(){
+        let elem=event.target;
+        if (elem.type=="text")
+        {
+           elem.focus();
+           elem.value=elem.type;
+        }
+       }
+       document.body.onmouseout=function(){
+        let elem=event.target;
+        if (elem.type=="text")
+        {
+           elem.blur();
+           elem.value="";
+        }
+       }
+      
+    </script>
+</body>
+</html>
